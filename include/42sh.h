@@ -241,6 +241,8 @@ int check_badly(char *str);
 int empty_if(char *temp);
 int too_few_args(char *tmp, int paren);
 char *delete_all_parenthese(char **str, int *parenthesis);
+void endif_func(char **str, shell_t shell, int *ret_value);
+void else_func(char **str, shell_t shell, int *ret_value);
 
 
 //UTILS FOREACH

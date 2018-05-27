@@ -42,8 +42,7 @@ int process_if(char **str, shell_t shell)
 		return (1);
 	tmp = convert_tab_to_string(str + ret_if);
 	tmp = my_clean_str(tmp);
-	check_then(str) != 0 && str[ret_if] != NULL &&
-	strcmp(str[ret_if], "endif") != 0 ?
+	check_then(str) != 0 && str[ret_if] != NULL ?
 	parse_cmd(shell, tmp, &ret_value) : 0;
 	return (ret_value);
 }

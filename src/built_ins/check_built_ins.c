@@ -24,6 +24,8 @@ static const builtin_t built_ins[] =
 	{"set", &set_func},
 	{"unset", &unset_func},
 	{"foreach", &foreach_func},
+	{"endif", &endif_func},
+	{"else", &else_func},
 	{NULL, NULL}
 };
 
